@@ -10,7 +10,7 @@ var:
   tags_path : /tags.html
   rss_path: /atom.xml
 
-production_url : http://tt7c7.me # or your custom domain name
+production_url : http://tivon.me # or your custom domain name
 title : Tivon
 
 author :
