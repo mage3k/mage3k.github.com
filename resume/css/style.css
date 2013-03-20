@@ -4,13 +4,13 @@
 }
 
 body {
-	background: #c6cace;
-	font-size: 14px;
+    background: #c6cace;
+    font-size: 14px;
     font-family: 'WenQuanYi Micro Hei Mono', 'WenQuanYi Micro Hei', 'Microsoft Yahei Mono', 'Microsoft Yahei', sans-serif;
     text-shadow: 0 1px 0 #eee;
     padding-top:50px;
     padding-bottom: 50px;
-    background-color: #f4f4ec;
+    background-color: #e5e5e5;
 }
 
 /*重写bootsrtap，改变布局的宽度*/
@@ -21,9 +21,9 @@ body {
 .resume{
     padding:25px;
     background-color: white;
-    -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, .15);
-       -moz-box-shadow: 5px 3px 5px rgba(0,0,0,.15);
-            box-shadow: 5px 5px 5px rgba(0, 0, 0, .15);
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .15);
+       -moz-box-shadow: 0 1px 3px rgba(0,0,0,.15);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, .15);
 }
 
 #base-info{
@@ -47,28 +47,23 @@ body {
 }
     
 a {
-	color: #404040;
-	text-decoration: none;
-	-webkit-transition: 0.5s;
-	   -moz-transition: 0.5s;
-	    -ms-transition: 0.5s;
-	     -o-transition: 0.5s;
-	        transition: 0.5s;
+    color: #404040;
+    text-decoration: none;
+    -webkit-transition: 0.5s;
+       -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+         -o-transition: 0.5s;
+            transition: 0.5s;
 }
-	a:hover,
-	a.selected {
-		color: #808080;
-	}
+a:hover,
+a.selected {
+    color: #808080;
+}
 
-h1,h2,h4,h5,h6 {
-}
-	h1 {
-	}
-	h2 {
-	}
+
 .sociales {
-	text-align: center;
-	margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 	#timeline {
