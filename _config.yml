@@ -2,7 +2,7 @@ title:            Void
 description:      A jekyll theme. Because I scribble.
 url:              # Site url.
 signoff:          # Your name.
-# disqus_shortname: mage3k
+disqus_shortname: mage3k
 facebook_appid:   # appid for like button, remove from /_includes/share.html if unwanted.
 google_analytics: UA-50515985-1
 
