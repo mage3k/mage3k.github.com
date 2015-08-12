@@ -1,4 +1,10 @@
-<header>
-<a id="go-back-home" href="/"><img src="/images/scribble.png" alt="scribble" width="53" height="59"></a>
-<p>{{ site.title }}</p>
+<header id="header">
+  <div class="container yue">
+    <a href="/">/</a>
+    <nav id="nav">
+      {% for link in site.links %}
+        <a target="{% if link.external %}_blank{% else %}_top{% endif %}" href="{{ link.url }}">{{ link.name }}</a>
+      {% endfor %}
+    </nav>
+  </div>
 </header>

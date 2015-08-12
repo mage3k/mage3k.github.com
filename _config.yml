@@ -1,26 +1,15 @@
-title:            Void
-description:      A jekyll theme. Because I scribble.
+title: Void
+description: A jekyll theme. Because I scribble.
 url:              # Site url.
-signoff:          # Your name.
 disqus_shortname: mage3k
-facebook_appid:   # appid for like button, remove from /_includes/share.html if unwanted.
 google_analytics: UA-50515985-1
-
 links:
-  - name:         About
-    url:          /about
-  # - name:         Blog
-  #   url:          http://mage3k.github.com
-  #   external:     true
-  - name:         Email
-    url:          mailto:loper.tt@gmail.com
-    external:     true
-  - name:         GitHub
-    url:          http://github.com/mage3k
-    external:     true
-pygments:         true
-permalink:        pretty
-markdown:         redcarpet
+  - name: about
+    url: /about
+highlighter: true
+permalink: pretty
+markdown: redcarpet
 redcarpet:
   extensions:
     - smart
+posts_limit: 5
