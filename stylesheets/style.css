@@ -49,29 +49,28 @@ html, body {
   font-family: "Avenir Next",Avenir,"Helvetica Neue",sans-serif;
 }
 
-.posts {
+.entry-list {
   padding: 0;
 }
 
-.posts li {
+.entry-item {
   list-style: none;
   border-bottom: 1px solid #ddd;
 }
 
-.posts time {
-  font-size: 0.4em;
-  vertical-align: middle;
-  margin-right: 20px;
+.entry-meta time {
+  color: #999;
+  font-size: 0.8em;
 }
 
-.posts a {
-  font-size: 0.8em;
+.entry-list a {
+  font-size: 1.2em;
   color: #444;
   text-decoration: none;
   transition: opacity .2s ease-out;
 }
 
-.posts a:hover {
+.entry-list a:hover {
   opacity: .6;
 }
 

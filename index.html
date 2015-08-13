@@ -1,7 +1,7 @@
 ---
 layout: page
 ---
-<!-- 
+<!--
 <nav>
   <a href="https://github.com/mage3k">
     <i class="socail-icon">
@@ -12,13 +12,18 @@ layout: page
   </a>
 </nav> -->
 
-<ul class="posts">
+<ul class="entry-list">
   {% for post in site.posts ｜ limit: site.posts_limit %}
-  <li>
-    <h2>
-      <time>{{ post.date | date_to_string }} </time>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </h2>
+  <li class="entry-item" itemscope itemtype="http://schema.org/Article">
+    <div class="entry-meta">
+      <time class="updated" itemprop="datepublished">{{ post.date | date_to_string }} </time>
+    </div>
+    <div class="detail">
+      <h2 itemprop="name">
+        <a itemprop="url" href="{{ post.url }}">{{ post.title }}</a>
+      </h2>
+      {%if post.description %}<div itemprop="description">{{ post.description }}</div>{% endif %}
+    </div>
   </li>
   {% endfor %}
 </ul>
