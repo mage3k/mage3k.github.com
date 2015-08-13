@@ -5,10 +5,9 @@ google_analytics: UA-50515985-1
 links:
   - name: about
     url: /about
-highlighter: true
+highlighter: pygments
 permalink: pretty
-markdown: redcarpet
-redcarpet:
-  extensions:
-    - smart
+markdown: kramdown
+kramdown:
+  input: GFM
 posts_limit: 5
