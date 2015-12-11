@@ -55,7 +55,7 @@ html, body {
 
 .entry-item {
   list-style: none;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid rgba(0, 0, 0, .15);
 }
 
 .entry-meta time {
@@ -84,6 +84,11 @@ html, body {
   margin-top: 2em;
 }
 
+.entry-title,
+.entry-meta {
+  text-align: center;
+}
+
 .entry-content a {
   color: #444;
   transition: opacity .2s ease-out;
@@ -97,6 +102,16 @@ html, body {
   padding: 30px 0;
   background-color: #f9f9f9;
   border-top: 1px solid #ddd;
+}
+
+.yue,
+.yue h1,
+.yue h2,
+.yue h3,
+.yue h4,
+.yue h5,
+.yue h6 {
+  font-family: "AlrightSans","Helvetica Neue","Helvetica","Arial","Source Han Sans SC","Hiragino Sans GB","Microsoft YaHei","Microsoft JhengHei",sans-serif
 }
 
 .yue code,
