@@ -84,17 +84,21 @@ html, body {
   margin-top: 2em;
 }
 
-.entry-title,
-.entry-meta {
+.entry-header .entry-title,
+.entry-header .entry-meta {
   text-align: center;
 }
 
 .entry-content a {
   color: #444;
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #999;
   transition: opacity .2s ease-out;
 }
 
 .entry-content a:hover {
+  text-decoration: none;
   opacity: .6;
 }
 
