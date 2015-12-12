@@ -3,4 +3,4 @@ layout: page
 title: About
 ---
 
-我读书少，你可别骗我。
+这家伙很懒，什么都还没写。
