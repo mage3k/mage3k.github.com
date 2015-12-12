@@ -14,7 +14,7 @@
               <p class="entry-description" itemprop="headline">{{ page.description }}</p>
             {% endif %}
             <div class="entry-meta">
-              <time class="updated" datatime="{{ page.date }}" itemprop="datePublished" pubdate>{{ page.date | date_to_string }}</time>
+              <time class="updated" datatime="{{ page.date }}" itemprop="datePublished" pubdate>{{ page.date | date: '%B %d, %Y' }}</time>
             </div>
         </header>
         <main class="entry-content" itemprop="articleBody">
@@ -22,7 +22,7 @@
         </main>
       </article>
     </section>
-    {% if page.disqus == 'yes' %}
+    {% if page.disqus %}
       <section class="entry-comments yue">
         {% include disqus.html %}
       </section>
