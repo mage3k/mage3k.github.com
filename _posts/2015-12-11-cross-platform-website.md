@@ -42,7 +42,7 @@ disqus: yes
 
 这样不支持[媒体查询](https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Media_queries)的 IE 浏览器便不会加载 mobile.css 文件了。同理，如果 IE 下样式覆盖较多也可以独立出 CSS 文件。
 
-然后是 JS，JS 当时的情况有点复杂，这里就不细说了，以后有时间再开另外一篇讲一下。总之最终的方案定为 Backbone ＋ gulp。大概思路是通过 gulp 构建出两个版本，一个 JQuery 版，一个 Zepto 版。通过[条件注释](https://msdn.microsoft.com/zh-cn/library/cc817577.aspx)来过滤。
+然后是 JS，JS 当时的情况有点复杂，这里就不细说了，以后有时间再开另外一篇讲一下。总之最终的方案定为 Backbone ＋ gulp。大概思路是通过 gulp 构建出两个版本，一个 jQuery 版，一个 Zepto 版。通过[条件注释](https://msdn.microsoft.com/zh-cn/library/cc817577.aspx)来过滤。
 
 {% highlight html %}
 <!--[if lte IE 9]>
@@ -54,4 +54,4 @@ disqus: yes
 
 之所以这么做，一个原因是因为 Zepto 体积小适合移动端，另一个原因是移动端点击事件有 300ms 的延迟需要 tap 事件的支持。
 
-重构完成之后基本上是达到了当时的目标，具体兼容范围没有具体统计过，不过根据公司的测试机使用情况来看，PC 端的各个浏览器都表现正常，移动端上兼容 Android 2.2 以上， iOS 6.0 以上，完全通过前端的技术实现了适配。
+重构完成之后基本上是达到了当时的目标，具体兼容范围没有统计过，不过根据公司的测试机使用情况来看，PC 端的各个浏览器都表现正常，移动端 Android 2.2 以上， iOS 6.0 以上都没什么大问题，完全通过前端的技术实现了适配。
