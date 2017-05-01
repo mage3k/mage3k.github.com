@@ -1,19 +1,28 @@
 ---
 layout: page
 ---
-
-<ul class="entry-list">
-  {% for post in site.posts ｜ limit: site.posts_limit %}
-  <li class="entry-item" itemscope itemtype="http://schema.org/Article">
-    <div class="entry-meta">
-      <time class="updated" itemprop="datepublished">{{ post.date | date_to_string }} </time>
-    </div>
-    <div class="detail">
-      <h2 itemprop="name">
-        <a itemprop="url" href="{{ post.url }}">{{ post.title }}</a>
-      </h2>
-      {%if post.description %}<div itemprop="description">{{ post.description }}</div>{% endif %}
-    </div>
-  </li>
-  {% endfor %}
-</ul>
+<section class="page-head">
+  <div class="social-platform-list">
+    <a href="https://github.com/mage3k" aria-label="Github"><i class="ion-social-github"></i></a>
+    <a href="https://twitter.com/mage3k" aria-label="Twitter"><i class="ion-social-twitter"></i></a>
+    <a href="https://www.instagram.com/mage3k" aria-label="Instagram"><i class="ion-social-instagram"></i></a>
+    <a href="/feed.xml" class="ion-social-rss"></a>
+  </div>
+</section>
+<section class="page-content">
+  <ul class="entry-list">
+    {% for post in site.posts limit: site.posts_limit %}
+    <li class="entry-item" itemscope itemtype="http://schema.org/Article">
+      <div class="entry-meta">
+        <time class="updated" itemprop="datepublished" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>
+      </div>
+      <div class="detail">
+        <h3 itemprop="name">
+          <a itemprop="url" class="title" href="{{ post.url }}">{{ post.title }}</a>
+        </h3>
+        {%if post.description %}<div class="description" itemprop="description">{{ post.description }}</div>{% endif %}
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
