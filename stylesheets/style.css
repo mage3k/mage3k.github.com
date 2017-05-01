@@ -3,6 +3,10 @@ html, body {
   padding: 0;
 }
 
+body {
+  font: 400 18px/1.42 -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Hiragino Sans GB,Droid Sans Fallback,Microsoft YaHei,sans-serif;
+}
+
 .container {
   max-width: 760px;
   margin-left: auto;
@@ -49,18 +53,39 @@ html, body {
   font-family: "Avenir Next",Avenir,"Helvetica Neue",sans-serif;
 }
 
+.page-head {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.page-logo {
+  margin-bottom: 20px;
+}
+
+.page-logo img {
+  width: 100px;
+}
+
 .entry-list {
   padding: 0;
 }
 
 .entry-item {
   list-style: none;
-  border-bottom: 1px solid rgba(0, 0, 0, .15);
+}
+
+.entry-item h3 {
+  margin: 0;
 }
 
 .entry-meta time {
   color: #999;
   font-size: 0.8em;
+  text-transform: uppercase;
+}
+
+.detail .description {
+  color: #666;
 }
 
 .entry-list a {
@@ -108,20 +133,22 @@ html, body {
   border-top: 1px solid #ddd;
 }
 
-.yue,
-.yue h1,
-.yue h2,
-.yue h3,
-.yue h4,
-.yue h5,
-.yue h6 {
-  font-family: "AlrightSans","Helvetica Neue","Helvetica","Arial","Source Han Sans SC","Hiragino Sans GB","Microsoft YaHei","Microsoft JhengHei",sans-serif
+.social-platform-list a {
+  display: inline-block;
+  color: #999;
+  font-size: 18px;
 }
 
-.yue code,
-.yue tt,
-.yue pre {
-  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+.social-platform-list a + a {
+  margin-left: .6em;
+}
+
+.social-platform-list a:hover {
+  color: #333;
+}
+
+time {
+  font-family: "Avenir Next",Avenir,"Helvetica Neue",sans-serif;
 }
 
 @media (max-width: 650px) {
