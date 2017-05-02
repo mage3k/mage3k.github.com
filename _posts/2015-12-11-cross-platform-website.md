@@ -15,7 +15,7 @@ disqus: yes
 
 接手之后没多久恰好碰上设计改版和新题型的需求，就借着这个机会开始考虑重构了。主要目的就是用前端工程化的手段解决多版本共存的问题。
 
-把4个版本合并的话首先要解决的问题就是怎么能自动化的处理这4个版本的核心代码共享的问题。我的解决方案是模块化加构建工具，当时具体的技术方案是 Backbone + Grunt，模块加载器使用的是 [Dexter.Yy](https://twitter.com/dexteryy) 的 [OzJS](http://ozjs.org/)。大概的思路是分4个目录，分别是 「base」, 「ie」, 「mobile」, 「sdk」, 每个目录下的结构都是下面这种
+首先要解决的问题就是怎么能自动化的处理这4个版本的核心代码共享的问题。我的解决方案是模块化加构建工具，当时具体的技术方案是 Backbone + Grunt，模块加载器使用的是 [Dexter.Yy](https://twitter.com/dexteryy) 的 [OzJS](http://ozjs.org/)。大概的思路是分4个目录，分别是 「base」, 「ie」, 「mobile」, 「sdk」, 每个目录下的结构都是下面这种
 
 ```
 ├── index.js
