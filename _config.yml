@@ -6,7 +6,7 @@ google_analytics: UA-50515985-1
 links:
   - name: about
     url: /about
-highlighter: pygments
+highlighter: rouge
 permalink: pretty
 markdown: kramdown
 kramdown:
